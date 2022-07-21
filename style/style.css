@@ -1,0 +1,180 @@
+/* Font url */
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Great+Vibes&family=Ibarra+Real+Nova&family=Poppins:wght@500&family=Roboto+Mono&family=Roboto+Slab&display=swap");
+
+/* body property */
+body {
+  font-family: "Finlandica", sans-serif;
+  font-family: "Great Vibes", cursive;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
+}
+/* main style */
+main{
+  display: grid;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+/* header style */
+header {
+  background-color: #161616;
+  width: 90vw;
+  height: 646px;
+  margin-top: 50px;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 111px;
+}
+
+header h1 {
+  font-size: 70px;
+  letter-spacing: 7px;
+  font-weight: 700;
+}
+header p {
+  font-size: 16px;
+}
+header img {
+  width: 581px;
+  height: 613px;
+}
+
+.text {
+  width: 531px;
+  height: 424px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button {
+  background-color: #dd0000;
+  color: white;
+  width: 187px;
+  height: 56px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s all;
+  margin-top: 30px;
+}
+.button span::after {
+  content: "\003E";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  border: 1px;
+}
+
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+/* article section start */
+
+article {
+  width: 90vw;
+  height: auto;
+  margin-top: 130px;
+  display: flex;
+}
+/* group section */
+.group {
+  width: 312px;
+  height: 312px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* all group button */
+.group button {
+  width: 252px;
+  height: 64px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.group button:focus {
+  background-color: red;
+  color: white;
+}
+.group button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* blogs section */
+.blogs {
+  width: 100%;
+  height: auto;
+  margin-left: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.blog {
+  width: 312px;
+  height: 362px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px rgb(150, 148, 148);
+  /* padding-left: 20px; */
+}
+.blog h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.clock, .message{
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 130px;
+}
+.clock, .message{
+  display: flex;
+  align-items: center;
+}
+
+.button-blogs,
+.blog h2,
+.info {
+  margin-left: 20px;
+}
+
+.button-blogs {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 32px;
+}
+
+/* footer section */
+
+footer{
+  width: 100%;
+height: 444px;
+background-color: #161616;
+}
